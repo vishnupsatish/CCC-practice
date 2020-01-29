@@ -2,11 +2,9 @@ change = int(input())
 string = str(input())
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 newstring = ""
+
 for i in range(len(string)):
-    shiftValue =
-
-
-'''
+    #shiftValue =
     j = i + 1
     shiftValue = 3 * j + change
     print(shiftValue)
@@ -15,4 +13,3 @@ for i in range(len(string)):
         shiftValue = shiftValue - (len(alphabet) - shiftValue)
     newstring += alphabet[shiftValue]
 print(newstring)
-'''
