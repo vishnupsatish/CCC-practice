@@ -6,23 +6,28 @@ from datetime import datetime
 rootdir ='.'  #set root directory
 old_stdout = sys.stdout  #set the current print() function to variable to go back later
 old_stdin = sys.stdin  #set the current input() function to variable to go back later
-probs = ["J1", "J2", "J3", "J4", "J5"]  #create list with problem names
-whatInput = input().split()  #get input for what years to run
-whatInput = sorted(list(set(whatInput)))  #remove all duplicate elements and sorts
-counter = 0  #counter of how many items are a valid year
+probs = [] #create list with problem names
+yearInput = input("Enter years: ").split()  #get input for what years to run
+yearInput = sorted(list(set(yearInput)))  #remove all duplicate elements and sort
 listOfYears = []
-if whatInput == "all":  #if user wants to test all years
+if yearInput == "all":  #if user wants to test all years
     listOfYears = sorted(os.listdir(rootdir)) #get all of the years in the CCC folder sorted
 else:  #if user has specific list of years to check
-    for item in whatInput:  #iterate over all items in input
-        if not item in os.listdir(rootdir):  #if one item is not a valid year, continue
-            listOfYears = sorted(os.listdir(rootdir))  #set the list of years to check to all
-            break  #no need to continue loop
-        else:  #if the item is a valid year, continue
-            counter += 1  #set counter of valid years + 1
-            listOfYears.append(item)  #if the element exists, add to the list of years to iterate
+    for item in yearInput:  #iterate over all items in input
+        if item in os.listdir(rootdir):  #if one item is a valid year, continue
+            listOfYears.append(item)  #add to the list of years to iterate
     if len(listOfYears) == 0:  #if no element exists in list of years, continue
         listOfYears = sorted(os.listdir(rootdir))  #make the list of years all of the years (default)
+probInput = input("Enter problems: ").split()  #get input for what problems to run
+probInput = sorted(list(set(probInput)))  #remove all duplicate elements and sortss
+if probInput == "all":  #if user wants to test all problems
+    probs = ["J1", "J2", "J3", "J4", "J5"]  #get all of the problem names
+else:  #if the user wants to test specific problems, continue
+    for item in probInput:  #iterate over all the items in the input
+        if item in ["J1", "J2", "J3", "J4", "J5"]:  #if the item is a valid problem name, continue
+            probs.append(item)  #add to the list of problems to the iterate
+    if len(probs) == 0:  #continue if no element exists in the list of years
+        probs = ["J1", "J2", "J3", "J4", "J5"]  #make the list of problems all of the problem name (default)
 open(rootdir + "/checker.txt", 'w').close()  #delete all of the contents of the checker file
 record = open(rootdir + "/checker.txt", "w+")  #open the checker file
 record.write("checker.py test on " + datetime.today().strftime('%Y-%m-%d') + "\n" + "\n")  #add the current date of the checker file
