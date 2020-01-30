@@ -7,7 +7,22 @@ rootdir ='.'  #set root directory
 old_stdout = sys.stdout  #set the current print() function to variable to go back later
 old_stdin = sys.stdin  #set the current input() function to variable to go back later
 probs = ["J1", "J2", "J3", "J4", "J5"]  #create list with problem names
-listOfYears = sorted(os.listdir(rootdir))  #get all of the years in the CCC folder sorted
+whatInput = input().split()  #get input for what years to run
+whatInput = sorted(list(set(whatInput)))  #remove all duplicate elements and sorts
+counter = 0  #counter of how many items are a valid year
+listOfYears = []
+if whatInput == "all":  #if user wants to test all years
+    listOfYears = sorted(os.listdir(rootdir)) #get all of the years in the CCC folder sorted
+else:  #if user has specific list of years to check
+    for item in whatInput:  #iterate over all items in input
+        if not item in os.listdir(rootdir):  #if one item is not a valid year, continue
+            listOfYears = sorted(os.listdir(rootdir))  #set the list of years to check to all
+            break  #no need to continue loop
+        else:  #if the item is a valid year, continue
+            counter += 1  #set counter of valid years + 1
+            listOfYears.append(item)  #if the element exists, add to the list of years to iterate
+    if len(listOfYears) == 0:  #if no element exists in list of years, continue
+        listOfYears = sorted(os.listdir(rootdir))  #make the list of years all of the years (default)
 open(rootdir + "/checker.txt", 'w').close()  #delete all of the contents of the checker file
 record = open(rootdir + "/checker.txt", "w+")  #open the checker file
 record.write("checker.py test on " + datetime.today().strftime('%Y-%m-%d') + "\n" + "\n")  #add the current date of the checker file
