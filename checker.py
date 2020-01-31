@@ -3,6 +3,7 @@ import os
 from io import StringIO
 import sys
 from datetime import datetime
+import traceback
 rootdir ='.'  #set root directory
 old_stdout = sys.stdout  #set the current print() function to variable to go back later
 old_stdin = sys.stdin  #set the current input() function to variable to go back later
@@ -50,8 +51,8 @@ for subdir in listOfYears:  #go through all of the years
                         run = open(problemPath, "r")  #open the current Python file to be run
                         try:
                             exec(run.read())  #try running the Python file with the current Input file as given input
-                        except:
-                            record.write("The program crashed" + "\n" + "\n")  #if error in Python program, add this to the checker file
+                        except Exception as e:
+                            record.write("The program crashed." + "\n" + "\n")  #if error in Python program, add this to the checker file
                         userInput.close()  #close the current input file
                         expectedOutput = open(currentPath + "/" + "Outputs" + "/" + user[:-2] + "out")  #open the expected output file that matches to the input file
                         sys.stdout = old_stdout  #redirect the output to console to be shown (not used)

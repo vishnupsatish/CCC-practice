@@ -182,7 +182,7 @@ j3.5.out
 
 Input file: j4.1.in at path ./2012/J4/Inputs/j4.1.in
 
-The program crashed
+The program crashed.
 
 Given output does NOT match, test FAILED
 
@@ -192,7 +192,7 @@ Given output does NOT match, test FAILED
 
 Input file: j4.3.in at path ./2012/J4/Inputs/j4.3.in
 
-The program crashed
+The program crashed.
 
 Given output does NOT match, test FAILED
 
@@ -202,7 +202,7 @@ Given output does NOT match, test FAILED
 
 Input file: j4.5.in at path ./2012/J4/Inputs/j4.5.in
 
-The program crashed
+The program crashed.
 
 Given output does NOT match, test FAILED
 
@@ -562,19 +562,191 @@ J5 with path of ./2017/J5/J5.py Not found or does not exist.
 
 2018
 
-J1 with path of ./2018/J1/J1.py Not found or does not exist.
+./2018/J1/J1.py
+
+Input file: j1.1.in at path ./2018/J1/Inputs/j1.1.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.10.in at path ./2018/J1/Inputs/j1.10.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.11.in at path ./2018/J1/Inputs/j1.11.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.12.in at path ./2018/J1/Inputs/j1.12.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.13.in at path ./2018/J1/Inputs/j1.13.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.2.in at path ./2018/J1/Inputs/j1.2.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.3.in at path ./2018/J1/Inputs/j1.3.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.4.in at path ./2018/J1/Inputs/j1.4.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.5.in at path ./2018/J1/Inputs/j1.5.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.6.in at path ./2018/J1/Inputs/j1.6.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.7.in at path ./2018/J1/Inputs/j1.7.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.8.in at path ./2018/J1/Inputs/j1.8.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j1.9.in at path ./2018/J1/Inputs/j1.9.in
+
+Given output matches wanted result, test PASSED
+
+All Tests Passed
 
 -----------------------------------------
 
-J2 with path of ./2018/J2/J2.py Not found or does not exist.
+./2018/J2/J2.py
+
+Input file: j2.01.in at path ./2018/J2/Inputs/j2.01.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.02.in at path ./2018/J2/Inputs/j2.02.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.03.in at path ./2018/J2/Inputs/j2.03.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.04.in at path ./2018/J2/Inputs/j2.04.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.05.in at path ./2018/J2/Inputs/j2.05.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.06.in at path ./2018/J2/Inputs/j2.06.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.07.in at path ./2018/J2/Inputs/j2.07.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.08.in at path ./2018/J2/Inputs/j2.08.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.09.in at path ./2018/J2/Inputs/j2.09.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j2.10.in at path ./2018/J2/Inputs/j2.10.in
+
+Given output matches wanted result, test PASSED
+
+All Tests Passed
 
 -----------------------------------------
 
-J3 with path of ./2018/J3/J3.py Not found or does not exist.
+./2018/J3/J3.py
+
+Input file: j3.1.in at path ./2018/J3/Inputs/j3.1.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j3.2.in at path ./2018/J3/Inputs/j3.2.in
+
+Given output matches wanted result, test PASSED
+
+Input file: j3.3.in at path ./2018/J3/Inputs/j3.3.in
+
+Given output matches wanted result, test PASSED
+
+All Tests Passed
 
 -----------------------------------------
 
-J4 with path of ./2018/J4/J4.py Not found or does not exist.
+./2018/J4/J4.py
+
+Input file: s2.01.in at path ./2018/J4/Inputs/s2.01.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.02.in at path ./2018/J4/Inputs/s2.02.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.03.in at path ./2018/J4/Inputs/s2.03.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.04.in at path ./2018/J4/Inputs/s2.04.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.05.in at path ./2018/J4/Inputs/s2.05.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.06.in at path ./2018/J4/Inputs/s2.06.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.07.in at path ./2018/J4/Inputs/s2.07.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.08.in at path ./2018/J4/Inputs/s2.08.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.09.in at path ./2018/J4/Inputs/s2.09.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.10.in at path ./2018/J4/Inputs/s2.10.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.11.in at path ./2018/J4/Inputs/s2.11.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.12.in at path ./2018/J4/Inputs/s2.12.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.13.in at path ./2018/J4/Inputs/s2.13.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.14.in at path ./2018/J4/Inputs/s2.14.in
+
+Given output matches wanted result, test PASSED
+
+Input file: s2.15.in at path ./2018/J4/Inputs/s2.15.in
+
+Given output matches wanted result, test PASSED
+
+All Tests Passed
 
 -----------------------------------------
 
