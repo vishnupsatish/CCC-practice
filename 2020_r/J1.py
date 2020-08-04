@@ -1,4 +1,0 @@
-if 1 * int(input()) + 2 * int(input()) + 3 * int(input()) > 9:
-    print("happy")
-else:
-    print("sad")
