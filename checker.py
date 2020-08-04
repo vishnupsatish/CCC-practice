@@ -3,7 +3,6 @@ import os
 from io import StringIO
 import sys
 from datetime import datetime
-import traceback
 rootdir ='.'  #set root directory
 old_stdout = sys.stdout  #set the current print() function to variable to go back later
 old_stdin = sys.stdin  #set the current input() function to variable to go back later
@@ -20,7 +19,7 @@ else:  #if user has specific list of years to check
     if len(listOfYears) == 0:  #if no element exists in list of years, continue
         listOfYears = sorted(os.listdir(rootdir))  #make the list of years all of the years (default)
 probInput = input("Enter problems: ").split()  #get input for what problems to run
-probInput = sorted(list(set(probInput)))  #remove all duplicate elements and sortss
+probInput = sorted(list(set(probInput)))  #remove all duplicate elements and sort
 if probInput == "all":  #if user wants to test all problems
     probs = ["J1", "J2", "J3", "J4", "J5"]  #get all of the problem names
 else:  #if the user wants to test specific problems, continue

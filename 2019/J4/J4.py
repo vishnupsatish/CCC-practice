@@ -14,10 +14,3 @@ for i in input():
         list3d[1][0] = list2[3]
         list3d[1][1] = list2[2]
 print(str(list3d[0][0]) + " " + str(list3d[0][1]) + "\n" + str(list3d[1][0]) + " " + str(list3d[1][1]))
-
-'''
-for i in list3d:
-    for j in i:
-        print(j, end=' ')
-    print()
-'''
