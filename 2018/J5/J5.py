@@ -4,7 +4,8 @@ import heapq
 # Define a class Node to create a graph
 class Node:
 
-	def __init__(self, name, adjacencies=[]):
+	def __init__(self, name, adjacencies=None):
+		adjacencies = [] if adjacencies is None else adjacencies
 		self.name = name
 		self.adjacenciesList = adjacencies
 		self.minDistance = float('inf')
@@ -22,6 +23,7 @@ class Node:
 	def __str__(self):
 		return f"Graph Node. Value {self.name}. Adjacent: {list(map(lambda a: a.name, self.adjacenciesList))}. Min Distance: {self.minDistance}"
 
+
 # Parse the input, remove duplicates, and subtract
 # one to every pointer to match Python's list number starting at 0
 pages = int(input())
@@ -33,7 +35,10 @@ visited = dict()
 for page in range(len(temp_pages_reachable)):
 	if temp_pages_reachable[page][0] == -1:
 		end_pages.append(page)
-	pages_reachable.append(list(filter((page).__ne__, (list(set(temp_pages_reachable[page]))))))
+	if -1 not in temp_pages_reachable[page]:
+		pages_reachable.append(list((list(set(temp_pages_reachable[page][1:])))))
+	else:
+		pages_reachable.append([-1])
 	visited[page] = []
 del temp_pages_reachable
 visited[-1] = []
