@@ -99,6 +99,8 @@ if len(reachable_pages) >= pages:
 else:
 	print("N")
 
+print(reachable_pages)
+
 shortest_path = float('inf')
 
 for i, node_ in enumerate(pages_nodes):

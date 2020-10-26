@@ -1,10 +1,8 @@
-import sys
-sys.setrecursionlimit(15000)
 room = []
-h = int(sys.stdin.readline())
-w = int(sys.stdin.readline())
+h = int(input())
+w = int(input())
 for _ in range(h):
-	room.append(list(map(int, sys.stdin.readline().split())))
+	room.append(list(map(int, input().split())))
 
 
 def get_coords(num):
