@@ -1,6 +1,7 @@
 room = []
 h = int(input())
 w = int(input())
+
 for _ in range(h):
 	room.append(list(map(int, input().split())))
 
@@ -13,8 +14,10 @@ def get_coords(num):
 				coords.append((i, num // i))
 	return coords
 
+
 reached = []
 found = "no"
+
 
 def bfs(coord, done):
 	if coord == (w, h):
@@ -29,6 +32,7 @@ def bfs(coord, done):
 		return done
 	if done:
 		return done
+
 
 out = bfs((1, 1), False)
 if out:

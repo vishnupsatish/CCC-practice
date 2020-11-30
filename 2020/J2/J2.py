@@ -6,5 +6,5 @@ days = 0
 while counter <= P:
     N = N * R
     counter = counter + N
-    days +=1 
+    days += 1
 print(days)
