@@ -1,11 +1,11 @@
-'''
-Author: Vishnu Satish
+"""
 Problem: CCC 2017 J5
-Algorithm: For every plank length, if the lengths are the same,
+Name: Vishnu Satish
+Solution: For every plank length, if the lengths are the same,
 divide the number of planks with that length by two to get the number
 of possible board lengths, or if the lengths are different, take the
 minimum of the number of different lengths, to avoid over counting.
-'''
+"""
 
 # Get n from input and initialize two variables, used for plank length and board length
 n = int(input())
