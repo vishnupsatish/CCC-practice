@@ -3,10 +3,6 @@ k = int(input())
 
 ans = 0
 
-# memo = [[[0 for _ in range(n//k)] for __ in range(n)] for ___ in range(k)]
-
-# print(memo)
-
 
 def pi(pieces, people, min):
 	global ans
