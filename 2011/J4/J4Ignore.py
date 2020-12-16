@@ -1,4 +1,4 @@
-#NOT DONE YET!!!! Some edge cases do not work, please refer to IN and OUT files to debug and fix. Thanks.
+# works now
 
 done = [(0, -1),
         (0, -2),
@@ -30,57 +30,55 @@ done = [(0, -1),
         (-1, -5)]
 
 whattodo = []
-for i in range(100):
-    line = input()
-    if line != "":
-        whattodo.append(line.split())
-    else:
-        break
 posnow = [-1, -5]
-over = False
-for inst in whattodo:
-    if inst[0] == "u":
+
+for i in range(100):
+    line = input().split()
+
+
+    over = False
+
+
+    if line[0] == "u":
         over = False
-        for i in range(1, int(inst[1]) + 1):
+        for i in range(1, int(line[1]) + 1):
             posnow[1] += 1
             if tuple(posnow) in done:
                 over = True
             else:
                 done.append(tuple(posnow))
-        #done.append(tuple(posnow))
-    elif inst[0] == "l":
+
+    elif line[0] == "l":
         over = False
-        for i in range(1, int(inst[1]) + 1):
+        for i in range(1, int(line[1]) + 1):
             posnow[0] -= 1
             if tuple(posnow) in done:
                 over = True
             else:
                 done.append(tuple(posnow))
-        #done.append(tuple(posnow))
-    elif inst[0] == "d":
+
+    elif line[0] == "d":
         over = False
-        for i in range(1, int(inst[1]) + 1):
+        for i in range(1, int(line[1]) + 1):
             posnow[1] -= 1
             if tuple(posnow) in done:
                 over = True
             else:
                 done.append(tuple(posnow))
-        #done.append(tuple(posnow))
-    elif inst[0] == "r":
+
+    elif line[0] == "r":
         over = False
-        for i in range(1, int(inst[1]) + 1):
+        for i in range(1, int(line[1]) + 1):
             posnow[0] += 1
             if tuple(posnow) in done:
                 over = True
             else:
                 done.append(tuple(posnow))
-        #done.append(tuple(posnow))
-    elif inst[0] == "q":
+
+    elif line[0] == "q":
         break
     if (over):
         print(str(posnow[0]) + " " +  str(posnow[1]) + " " + "DANGER")
         break
     else:
         print(str(posnow[0]) + " " + str(posnow[1]) + " " + "safe")
-
-
