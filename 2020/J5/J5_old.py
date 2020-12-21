@@ -1,9 +1,9 @@
 M = int(input())
 N = int(input())
-mults = {"1":[[1, 1]],
-         "2":[[2, 1], [1, 2]],
+mults = {"1": [[1, 1]],
+         "2": [[2, 1], [1, 2]],
          "3": [[]],
-         "4": [[2,2]]}
+         "4": [[2, 2]]}
 coords = [0, 0]
 
 if M == 3 and N == 4:
@@ -22,11 +22,6 @@ else:
         else:
             location = [random.choice[1, 2], random.choice[1, 2]]
     print("no")
-
-
-
-
-
 
 '''
     def getmults(number):
