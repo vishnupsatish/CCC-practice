@@ -1,85 +1,92 @@
-checker.py test on 2020-11-18
+checker.py test on 2020-12-25
 
-2017
+2019
 
-./2017/J3/J3.py
+./2019/S3/S3.py
 
-Input file: j3.01.in at path ./2017/J3/Inputs/j3.01.in
-
-Given output does NOT match, test FAILED
-
-Input file: j3.02.in at path ./2017/J3/Inputs/j3.02.in
+Input file: s3.1-01.in at path ./2019/S3/Inputs/s3.1-01.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.03.in at path ./2017/J3/Inputs/j3.03.in
+Input file: s3.1-02.in at path ./2019/S3/Inputs/s3.1-02.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.04.in at path ./2017/J3/Inputs/j3.04.in
+Input file: s3.1-03.in at path ./2019/S3/Inputs/s3.1-03.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.05.in at path ./2017/J3/Inputs/j3.05.in
+Input file: s3.1-04.in at path ./2019/S3/Inputs/s3.1-04.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.06.in at path ./2017/J3/Inputs/j3.06.in
+Input file: s3.1-05.in at path ./2019/S3/Inputs/s3.1-05.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.07.in at path ./2017/J3/Inputs/j3.07.in
+Input file: s3.1-06.in at path ./2019/S3/Inputs/s3.1-06.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.08.in at path ./2017/J3/Inputs/j3.08.in
+Input file: s3.1-07.in at path ./2019/S3/Inputs/s3.1-07.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.09.in at path ./2017/J3/Inputs/j3.09.in
+Input file: s3.1-08.in at path ./2019/S3/Inputs/s3.1-08.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.10.in at path ./2017/J3/Inputs/j3.10.in
+Input file: s3.1-09.in at path ./2019/S3/Inputs/s3.1-09.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.11.in at path ./2017/J3/Inputs/j3.11.in
+Input file: s3.1-10.in at path ./2019/S3/Inputs/s3.1-10.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.12.in at path ./2017/J3/Inputs/j3.12.in
+Input file: s3.2-01.in at path ./2019/S3/Inputs/s3.2-01.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.13.in at path ./2017/J3/Inputs/j3.13.in
+Input file: s3.2-02.in at path ./2019/S3/Inputs/s3.2-02.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.14.in at path ./2017/J3/Inputs/j3.14.in
+Input file: s3.2-03.in at path ./2019/S3/Inputs/s3.2-03.in
 
 Given output does NOT match, test FAILED
 
-Input file: j3.15.in at path ./2017/J3/Inputs/j3.15.in
+Input file: s3.2-04.in at path ./2019/S3/Inputs/s3.2-04.in
 
 Given output does NOT match, test FAILED
 
-Failed:
-j3.01.out
-j3.02.out
-j3.03.out
-j3.04.out
-j3.05.out
-j3.06.out
-j3.07.out
-j3.08.out
-j3.09.out
-j3.10.out
-j3.11.out
-j3.12.out
-j3.13.out
-j3.14.out
-j3.15.out
+Input file: s3.2-05.in at path ./2019/S3/Inputs/s3.2-05.in
 
------------------------------------------
+Given output does NOT match, test FAILED
+
+Input file: s3.2-06.in at path ./2019/S3/Inputs/s3.2-06.in
+
+Given output does NOT match, test FAILED
+
+Input file: s3.2-07.in at path ./2019/S3/Inputs/s3.2-07.in
+
+Given output does NOT match, test FAILED
+
+Input file: s3.2-08.in at path ./2019/S3/Inputs/s3.2-08.in
+
+Given output does NOT match, test FAILED
+
+Input file: s3.2-09.in at path ./2019/S3/Inputs/s3.2-09.in
+
+Given output does NOT match, test FAILED
+
+Input file: s3.2-10.in at path ./2019/S3/Inputs/s3.2-10.in
+
+Given output does NOT match, test FAILED
+
+Input file: s3.2-11.in at path ./2019/S3/Inputs/s3.2-11.in
+
+Given output does NOT match, test FAILED
+
+Input file: s3.3-01.in at path ./2019/S3/Inputs/s3.3-01.in
 

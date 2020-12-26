@@ -21,13 +21,13 @@ else:  #if user has specific list of years to check
 probInput = input("Enter problems: ").split()  #get input for what problems to run
 probInput = sorted(list(set(probInput)))  #remove all duplicate elements and sort
 if probInput == "all":  #if user wants to test all problems
-    probs = ["J1", "J2", "J3", "J4", "J5"]  #get all of the problem names
+    probs = ["J1", "J2", "J3", "J4", "J5", "S1", "S2", "S3", "S4", "S5"]  #get all of the problem names
 else:  #if the user wants to test specific problems, continue
     for item in probInput:  #iterate over all the items in the input
-        if item in ["J1", "J2", "J3", "J4", "J5"]:  #if the item is a valid problem name, continue
+        if item in ["J1", "J2", "J3", "J4", "J5", "S1", "S2", "S3", "S4", "S5"]:  #if the item is a valid problem name, continue
             probs.append(item)  #add to the list of problems to the iterate
     if len(probs) == 0:  #continue if no element exists in the list of years
-        probs = ["J1", "J2", "J3", "J4", "J5"]  #make the list of problems all of the problem name (default)
+        probs = ["J1", "J2", "J3", "J4", "J5", "S1", "S2", "S3", "S4", "S5"]  #make the list of problems all of the problem name (default)
 open(rootdir + "/checker.txt", 'w').close()  #delete all of the contents of the checker file
 record = open(rootdir + "/checker.txt", "w+")  #open the checker file
 record.write("checker.py test on " + datetime.today().strftime('%Y-%m-%d') + "\n" + "\n")  #add the current date of the checker file
