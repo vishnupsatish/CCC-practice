@@ -1,3 +1,5 @@
+# Note: THERE IS A QUICKER SOLUTION!!!!! CHECK J5_bfs.py for a quicker solution!!!
+
 """
 Problem: CCC 2020 J5
 Name: Vishnu Satish

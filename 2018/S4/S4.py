@@ -2,7 +2,7 @@ from math import ceil
 
 N = int(input())
 
-memo = {1: 1, 2: 1, 3: 2}
+memo = {1: 1, 2: 1, 3: 2, 4: 3, 5: 4, 10: 13}
 
 
 def determine(N):
