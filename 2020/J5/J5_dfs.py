@@ -2,7 +2,7 @@
 Problem: CCC 2020 J5
 Name: Vishnu Satish
 Solution: Find all of the possible coordinates from a number then
-use BFS to find whether reaching a coordinate is possible
+use DFS to find whether reaching a coordinate is possible
 """
 
 from sys import stdin
@@ -44,8 +44,8 @@ def get_coords(coords):
     return all_coords
 
 
-# BFS function
-def bfs():
+# DFS function
+def dfs():
     # Initialize a visited array to use O(1) lookups
     # based on the height and width of the room
     visited = []
@@ -55,11 +55,11 @@ def bfs():
     # Initialize the queue
     q = [(1, 1)]
 
-    # Main BFS loop
+    # Main DFS loop
     while q:
-        # Get the current element (FIFO)
-        elem = q[0]
-        del q[0]
+        # Get the current element (LIFO)
+        elem = q[-1]
+        del q[-1]
 
         # if the element is the bottom-right of the room,
         # then it is possible to get there, so print yes
@@ -83,5 +83,5 @@ def bfs():
         print('no')
 
 
-# Call the BFS function
-bfs()
+# Call the DFS function
+dfs()
